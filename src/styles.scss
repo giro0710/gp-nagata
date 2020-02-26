@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  src: url("/assets/fonts/Helvetica/HelveticaNeueLt.ttf");
+  font-family: "HelveticaNeueLight";
+}
+
+@font-face {
+  src: url("/assets/fonts/Helvetica/HelveticaNeueMed.ttf");
+  font-family: "HelveticaNeueMedium";
+}
+
+@font-face {
+  font-family: "National";
+  src: url("/assets/fonts/National/National-Light.otf");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "National";
+  src: url("/assets/fonts/National/National-Book.otf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "National";
+  src: url("/assets/fonts/National/National-Medium.otf");
+  font-weight: medium, 500;
+}
+
+@font-face {
+  font-family: "National";
+  src: url("/assets/fonts/National/National-Semibold.otf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "National";
+  src: url("/assets/fonts/National/National-Bold.otf");
+  font-weight: bold, 700;
+}
+
+@font-face {
+  font-family: "National";
+  src: url("/assets/fonts/National/National-Extrabold.otf");
+  font-weight: 800;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "National";
+}

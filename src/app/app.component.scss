@@ -1,0 +1,55 @@
+$skyblue: #00aff0;
+$steelgrey: #f1f1f1;
+$ironblack: #292829;
+
+.navbar {
+  background-color: $steelgrey;
+}
+
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active .active {
+  color: $skyblue !important;
+}
+
+.navbar-light .navbar-toggler {
+  border: none !important;
+}
+
+.footer {
+  background: $ironblack;
+  width: 100%;
+  padding: 25px;
+  color: white;
+  font-family: "Calibri";
+
+  .foot-body {
+    margin-top: 15px;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    :hover {
+      color: lightcoral;
+    }
+  }
+
+  .social-icon-label {
+    font-family: "Calibri";
+    font-size: 1.2rem;
+    margin-left: 75px;
+  }
+  
+  .social-icon {
+    font-size: 2rem;
+    margin-left: 25px;
+  }
+}

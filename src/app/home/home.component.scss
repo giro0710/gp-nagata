@@ -1,0 +1,123 @@
+$sparkred: #eb2145;
+$steelgrey: #f1f1f1;
+
+.home {
+  background: white no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100vh;
+
+  div {
+    height: 100%;
+    margin-bottom: 25px;
+    padding: 15px 25px 70px 25px;
+  }
+
+  h1 {
+    font-weight: 300;
+  }
+  
+  h3 {
+    color: $sparkred;
+    font-weight: 200;
+  }
+}
+
+.about {
+  background-color: $steelgrey;
+
+  h1 {
+    font-size: 3.5rem;
+  }
+  
+  h3 {
+    color: $sparkred;
+    font-weight: 200;
+    margin-bottom: 25px;
+  }
+
+  button {
+    border-radius: 0px !important;
+    font-weight: 300 !important;
+  }
+}
+
+.blog {
+  background-color: $steelgrey;
+
+  h1 {
+    font-size: 3.5rem;
+  }
+  
+  h3 {
+    color: $sparkred;
+    font-weight: 200;
+    margin-bottom: 25px;
+  }
+
+  button {
+    border-radius: 0px !important;
+    font-weight: 300 !important;
+  }
+}
+
+.aircast {
+  background-color: $steelgrey;
+  
+  .aircast-body h1 {
+    font-size: 3.5rem;
+  }
+  
+  .aircast-body h3 {
+    color: $sparkred;
+    font-weight: 200;
+    margin-bottom: 25px;
+  }
+
+  button {
+    border-radius: 0px !important;
+    font-weight: 300 !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about h1{
+    font-size: 3rem;
+  }
+
+  .aircast h1{
+    font-size: 3rem;
+  }
+
+  .about-body {
+    flex-direction: row-reverse;
+
+    .body-text {
+      order: 1
+    }
+
+    .body-image {
+      order: 0
+    }
+  }
+
+  .aircast-body {
+    flex-direction: row-reverse;
+
+    .body-text {
+      order: 1
+    }
+
+    .body-image {
+      order: 0
+    }
+  }
+}
+
+
+
+
+
+
+
+

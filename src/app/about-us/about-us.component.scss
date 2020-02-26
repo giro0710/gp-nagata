@@ -1,0 +1,170 @@
+$skyblue: #00aff0;
+$sparkred: #eb2145;
+$ironblack: #323232;
+
+.skyblue {
+  color: $skyblue;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.skyblue-bg {
+  background-color: $skyblue;
+}
+
+.spark-red-bg {
+  background-color: $sparkred;
+}
+
+.iron-black-bg {
+  background-color: $ironblack;
+}
+
+.main {
+  margin-top: 75px;
+  padding: 85px 85px 85px 85px;
+}
+
+.second {
+  margin-bottom: 75px;
+
+  h1 {
+    font-size: 4rem;
+  }
+  
+  span {
+    color: $sparkred;
+  }
+  
+  p {
+    font-family: "Calibri";
+    font-size: 1.5rem;
+    text-align: justify;
+  }
+}
+
+.third {
+  background-color: #f1f1f1;
+  margin-bottom: 75px;
+
+  p {
+    font-family: "Calibri";
+    font-size: 1.8rem;
+  }
+}
+
+.forth {
+  margin-bottom: 75px;
+}
+
+.fifth h1{
+  font-size: 4rem;
+}
+
+.fifth span {
+  color: $sparkred;
+}
+
+.fifth p {
+  font-family: "Calibri";
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.sixth {
+  margin-bottom: 75px;
+
+  p {
+    font-family: "Calibri";
+    font-size: 1.5rem;
+    text-align: justify;
+  }
+}
+
+.seventh {
+  margin-bottom: 75px;
+
+  h1 {
+    font-size: 4rem;
+  }
+  
+  h6 {
+    font-family: "Calibri";
+  }
+}
+
+.eighth h1{
+  font-size: 4rem;
+}
+
+.eighth span {
+  color: $sparkred;
+}
+
+.eighth p {
+  font-family: "Calibri";
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.box {
+  padding: 15px 25px 15px 25px;
+  border: 1px solid $sparkred;
+  border-radius: 5px;
+  font-family: "Calibri";
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    padding: 35px 35px 35px 35px;
+  }
+
+  .second h1{
+    font-size: 3rem;
+  }
+
+  .second p {
+    font-size: 1rem;
+  }
+
+  .third img {
+    width: 25% !important;
+    margin-bottom: 25px;
+    align-self: center;
+  }
+
+  .third p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .fifth h1{
+    font-size: 3rem;
+  }
+
+  .fifth p {
+    font-size: 1rem;
+  }
+
+  .sixth p {
+    font-size: 1rem;
+  }
+
+  .seventh h1{
+    font-size: 3rem;
+  }
+
+  .eighth h1{
+    font-size: 3rem;
+  }
+
+  .eighth p {
+    font-size: 1rem;
+  }
+}
