@@ -15,6 +15,7 @@ const appRoutes: Routes = [
   { path: 'product-and-services', component: ProductAndServicesComponent },
   { path: 'contact-us', component: ContactUsComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', redirectTo: '/home' }
 ];
 
 @NgModule({
@@ -29,7 +30,7 @@ const appRoutes: Routes = [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(
-      appRoutes,
+      appRoutes
     )
   ],
   providers: [],
