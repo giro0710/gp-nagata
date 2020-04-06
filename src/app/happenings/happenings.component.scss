@@ -1,0 +1,63 @@
+$skyblue: #00aff0;
+$sparkred: #eb2145;
+$ironblack: #323232;
+$steelgrey: #f1f1f1;
+
+.main {
+  padding: 85px;
+
+  .blog {
+    margin-top: 75px;
+    margin-bottom: 5px;
+
+    .body {
+      .text {
+        background-color: $steelgrey;
+        padding: 50px;
+        width: 100%;
+        height: 100%;
+
+        label {
+          font-family: "Calibri";
+          color: $sparkred;
+        }
+
+        h1 {
+          font-size: 2rem;
+          margin-bottom: 25px;
+        }
+
+        label {
+          color: $sparkred;
+        }
+
+        p {
+          font-family: "Calibri";
+          text-align: justify;
+          margin-bottom: 30px;
+        }
+
+        button {
+          border-radius: 0px !important;
+          font-weight: 300 !important;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    padding: 35px 35px 35px 35px;
+
+    .blog {
+      .body {
+        .text {
+          button {
+            width: 50% !important;
+          }
+        }
+      }
+    }
+  }
+}

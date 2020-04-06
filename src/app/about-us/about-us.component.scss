@@ -31,13 +31,13 @@ $ironblack: #323232;
   margin-bottom: 75px;
 
   h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
-  
+
   span {
     color: $sparkred;
   }
-  
+
   p {
     font-family: "Calibri";
     font-size: 1.5rem;
@@ -45,7 +45,7 @@ $ironblack: #323232;
   }
 }
 
-.third {
+.mission {
   background-color: #f1f1f1;
   margin-bottom: 75px;
 
@@ -59,8 +59,8 @@ $ironblack: #323232;
   margin-bottom: 75px;
 }
 
-.fifth h1{
-  font-size: 4rem;
+.fifth h1 {
+  font-size: 2.4rem;
 }
 
 .fifth span {
@@ -73,7 +73,7 @@ $ironblack: #323232;
   text-align: justify;
 }
 
-.sixth {
+.fourSquare {
   margin-bottom: 75px;
 
   p {
@@ -83,27 +83,27 @@ $ironblack: #323232;
   }
 }
 
-.seventh {
+.team {
   margin-bottom: 75px;
 
   h1 {
     font-size: 4rem;
   }
-  
+
   h6 {
     font-family: "Calibri";
   }
 }
 
-.eighth h1{
+.clients h1 {
   font-size: 4rem;
 }
 
-.eighth span {
+.clients span {
   color: $sparkred;
 }
 
-.eighth p {
+.clients p {
   font-family: "Calibri";
   font-size: 1.5rem;
   text-align: justify;
@@ -125,7 +125,7 @@ $ironblack: #323232;
     padding: 35px 35px 35px 35px;
   }
 
-  .second h1{
+  .second h1 {
     font-size: 3rem;
   }
 
@@ -133,18 +133,18 @@ $ironblack: #323232;
     font-size: 1rem;
   }
 
-  .third img {
+  .mission img {
     width: 25% !important;
     margin-bottom: 25px;
     align-self: center;
   }
 
-  .third p {
+  .mission p {
     font-size: 1rem;
     text-align: center;
   }
 
-  .fifth h1{
+  .fifth h1 {
     font-size: 3rem;
   }
 
@@ -152,19 +152,19 @@ $ironblack: #323232;
     font-size: 1rem;
   }
 
-  .sixth p {
+  .fourSquare p {
     font-size: 1rem;
   }
 
-  .seventh h1{
+  .team h1 {
     font-size: 3rem;
   }
 
-  .eighth h1{
+  .clients h1 {
     font-size: 3rem;
   }
 
-  .eighth p {
+  .clients p {
     font-size: 1rem;
   }
 }

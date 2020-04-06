@@ -3,34 +3,74 @@
     <a class="navbar-brand animated pulse" href="#">
       <img src="../assets/images/logo.png" height="25" alt="" />
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarCollapse"
+      aria-controls="navbarCollapse"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item ml-3" routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse.show">
+        <li
+          class="nav-item ml-3"
+          routerLinkActive="active"
+          data-toggle="collapse"
+          data-target=".navbar-collapse.show"
+        >
           <a class="nav-link" routerLink="/home">HOME </a>
         </li>
-        <li class="nav-item ml-3" routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse.show">
-          <a class="nav-link" routerLink="/about-us">ABOUT US </a>
+        <li
+          class="nav-item ml-3"
+          routerLinkActive="active"
+          data-toggle="collapse"
+          data-target=".navbar-collapse.show"
+        >
+          <a class="nav-link" routerLink="/about">ABOUT </a>
         </li>
-        <li class="nav-item ml-3" routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse.show">
-          <a class="nav-link" routerLink="/product-and-services">PRODUCT AND SERVICES </a>
+        <li
+          class="nav-item ml-3"
+          routerLinkActive="active"
+          data-toggle="collapse"
+          data-target=".navbar-collapse.show"
+        >
+          <a class="nav-link" routerLink="/projects">PROJECTS </a>
         </li>
-        <li class="nav-item ml-3" routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse.show">
-          <a class="nav-link" routerLink="/contact-us">CONTACT US </a>
+        <li
+          class="nav-item ml-3"
+          routerLinkActive="active"
+          data-toggle="collapse"
+          data-target=".navbar-collapse.show"
+        >
+          <a class="nav-link" routerLink="/happenings">HAPPENINGS </a>
+        </li>
+        <li
+          class="nav-item ml-3"
+          routerLinkActive="active"
+          data-toggle="collapse"
+          data-target=".navbar-collapse.show"
+        >
+          <a class="nav-link" routerLink="/connect">CONNECT </a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-<router-outlet></router-outlet>
+<router-outlet (activate)="onActivate($event)"></router-outlet>
 <section class="footer">
   <div class="footer-body">
     <div class="d-flex flex-wrap">
       <div class="col-md-8 mb-5">
-        <img class="mb-4" src="../assets/images/logo-white.png" height="30" alt="" />
+        <img
+          class="mb-4"
+          src="../assets/images/logo-white.png"
+          height="30"
+          alt=""
+        />
         <br />
         <!-- <p>74 Don A. Roces Ave. cor. Sct. Santiago St.,</p>
         <p>Brgy. Obrero, Quezon City 1103,</p>
@@ -44,11 +84,16 @@
             <span>FOLLOW US</span>
           </span>
           <span class="social-icon">
-            <a href="https://facebook.com/GP-Nagata-107912507228368/" target="_blank"><i
-                class="fab fa-facebook-square"></i></a>
+            <a
+              href="https://facebook.com/GP-Nagata-107912507228368/"
+              target="_blank"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
           </span>
           <span class="social-icon">
-            <a href="https://www.instagram.com/gpnagata/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/gpnagata/" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
           </span>
         </div>
         <div class="align-self-end">

@@ -1,5 +1,6 @@
 $sparkred: #eb2145;
 $steelgrey: #f1f1f1;
+$skyblue: #00aff0;
 
 .home {
   background: white no-repeat;
@@ -16,10 +17,26 @@ $steelgrey: #f1f1f1;
   h1 {
     font-weight: 300;
   }
-  
+
   h3 {
     color: $sparkred;
     font-weight: 200;
+    margin-bottom: 25px;
+  }
+}
+
+.home-body {
+  background: url("../../assets/images/home/hero-bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  button {
+    padding: 10px;
+    background-color: $skyblue;
+    border: 1px solid $skyblue;
+    border-radius: 0;
+    color: white;
+    position: relative;
   }
 }
 
@@ -29,7 +46,7 @@ $steelgrey: #f1f1f1;
   h1 {
     font-size: 3.5rem;
   }
-  
+
   h3 {
     color: $sparkred;
     font-weight: 200;
@@ -42,13 +59,13 @@ $steelgrey: #f1f1f1;
   }
 }
 
-.blog {
+.projects {
   background-color: $steelgrey;
 
   h1 {
     font-size: 3.5rem;
   }
-  
+
   h3 {
     color: $sparkred;
     font-weight: 200;
@@ -63,11 +80,11 @@ $steelgrey: #f1f1f1;
 
 .aircast {
   background-color: $steelgrey;
-  
+
   .aircast-body h1 {
     font-size: 3.5rem;
   }
-  
+
   .aircast-body h3 {
     color: $sparkred;
     font-weight: 200;
@@ -80,12 +97,39 @@ $steelgrey: #f1f1f1;
   }
 }
 
+.happenings {
+  background-color: $steelgrey;
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h3 {
+    color: $sparkred;
+    font-weight: 200;
+    margin-bottom: 25px;
+  }
+
+  button {
+    border-radius: 0px !important;
+    font-weight: 300 !important;
+  }
+}
+
 @media only screen and (max-width: 768px) {
-  .about h1{
+  .home-body {
+    background-position-x: 60%;
+
+    a {
+      width: 50% !important;
+    }
+  }
+
+  .about h1 {
     font-size: 3rem;
   }
 
-  .aircast h1{
+  .aircast h1 {
     font-size: 3rem;
   }
 
@@ -93,11 +137,11 @@ $steelgrey: #f1f1f1;
     flex-direction: row-reverse;
 
     .body-text {
-      order: 1
+      order: 1;
     }
 
     .body-image {
-      order: 0
+      order: 0;
     }
   }
 
@@ -105,19 +149,11 @@ $steelgrey: #f1f1f1;
     flex-direction: row-reverse;
 
     .body-text {
-      order: 1
+      order: 1;
     }
 
     .body-image {
-      order: 0
+      order: 0;
     }
   }
 }
-
-
-
-
-
-
-
-

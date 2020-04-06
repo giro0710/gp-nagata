@@ -1,21 +1,27 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-import { AppRoutingModule } from './app-routing.module';
-import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { AboutUsComponent } from './about-us/about-us.component';
-import { ProductAndServicesComponent } from './product-and-services/product-and-services.component';
-import { ContactUsComponent } from './contact-us/contact-us.component';
+import { AppRoutingModule } from "./app-routing.module";
+import { RouterModule, Routes } from "@angular/router";
+import { AppComponent } from "./app.component";
+import { HomeComponent } from "./home/home.component";
+import { AboutUsComponent } from "./about-us/about-us.component";
+import { ProductAndServicesComponent } from "./product-and-services/product-and-services.component";
+import { ContactUsComponent } from "./contact-us/contact-us.component";
+import { HappeningsComponent } from "./happenings/happenings.component";
 
 const appRoutes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'about-us', component: AboutUsComponent, data: { title: 'Heroes List' } },
-  { path: 'product-and-services', component: ProductAndServicesComponent },
-  { path: 'contact-us', component: ContactUsComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: '**', redirectTo: '/home' }
+  { path: "home", component: HomeComponent },
+  {
+    path: "about",
+    component: AboutUsComponent,
+    data: { title: "Heroes List" }
+  },
+  { path: "projects", component: ProductAndServicesComponent },
+  { path: "happenings", component: HappeningsComponent },
+  { path: "connect", component: ContactUsComponent },
+  { path: "", redirectTo: "/home", pathMatch: "full" },
+  { path: "**", redirectTo: "/home" }
 ];
 
 @NgModule({
@@ -24,16 +30,11 @@ const appRoutes: Routes = [
     HomeComponent,
     AboutUsComponent,
     ProductAndServicesComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    HappeningsComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    RouterModule.forRoot(
-      appRoutes
-    )
-  ],
+  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes)],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
