@@ -116,9 +116,20 @@ $skyblue: #00aff0;
   }
 }
 
+.ig {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h3 {
+    color: $sparkred;
+    font-weight: 200;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .home-body {
-    background-position-x: 75%;
+    background-position-x: 70%;
 
     a {
       width: 50% !important;
@@ -147,8 +158,8 @@ $skyblue: #00aff0;
     }
   }
 
-  .project {
-    .project-body {
+  .projects {
+    .projects-body {
       h1 {
         font-size: 2.5rem;
       }
@@ -190,6 +201,17 @@ $skyblue: #00aff0;
       button {
         width: 50% !important;
       }
+    }
+  }
+
+  .ig {
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h3 {
+      color: $sparkred;
+      font-weight: 200;
     }
   }
 }

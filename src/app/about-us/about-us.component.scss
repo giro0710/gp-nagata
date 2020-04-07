@@ -95,18 +95,25 @@ $ironblack: #323232;
   }
 }
 
-.clients h1 {
-  font-size: 4rem;
-}
+.clients {
+  h1 {
+    font-size: 3.5rem;
+  }
 
-.clients span {
-  color: $sparkred;
-}
+  span {
+    color: $sparkred;
+  }
 
-.clients p {
-  font-family: "Calibri";
-  font-size: 1.5rem;
-  text-align: justify;
+  p {
+    font-family: "Calibri";
+    font-size: 1.5rem;
+    text-align: justify;
+  }
+
+  .logo {
+    width: 10%;
+    margin: 25px;
+  }
 }
 
 .box {
@@ -152,19 +159,30 @@ $ironblack: #323232;
     font-size: 1rem;
   }
 
-  .fourSquare p {
-    font-size: 1rem;
+  .fourSquare {
+    margin-bottom: 50px;
+
+    p {
+      font-size: 1rem;
+    }
   }
 
   .team h1 {
     font-size: 2.5rem;
   }
 
-  .clients h1 {
-    font-size: 2.5rem;
-  }
+  .clients {
+    h1 {
+      font-size: 2.5rem;
+    }
 
-  .clients p {
-    font-size: 1rem;
+    p {
+      font-size: 1rem;
+    }
+
+    .logo {
+      width: 35%;
+      margin: 25px;
+    }
   }
 }
