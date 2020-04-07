@@ -1,0 +1,135 @@
+$skyblue: #00aff0;
+$sparkred: #eb2145;
+$ironblack: #323232;
+$steelgrey: #f1f1f1;
+
+.main {
+  margin-top: 75px;
+  padding: 50px;
+
+  .blog {
+    margin-bottom: 5px;
+
+    .body {
+      .image {
+        padding: 0px;
+        margin-bottom: 10px;
+      }
+
+      .text {
+        label {
+          font-family: "Calibri";
+          font-size: 1.2rem;
+          color: $sparkred;
+          font-weight: 100;
+        }
+
+        h1 {
+          font-size: 2rem;
+          text-align: justify;
+          margin-bottom: 25px;
+        }
+
+        p {
+          font-family: "Calibri";
+          font-size: 1.2rem;
+          font-weight: 100;
+          text-align: justify;
+          margin-bottom: 25px;
+        }
+
+        .photos {
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+
+  .recent-blogs {
+    margin-bottom: 50px;
+
+    .body {
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 25px;
+      }
+
+      .blogs {
+        margin-bottom: 50px;
+
+        a {
+          text-decoration: none;
+          color: black;
+
+          :hover {
+            text-decoration: none;
+            color: $skyblue;
+          }
+        }
+
+        .item {
+          background-color: $steelgrey;
+          padding: 15px;
+          margin-bottom: 15px;
+
+          h3 {
+            font-size: 1rem;
+            font-weight: 300;
+          }
+
+          label {
+            font-family: "Calibri";
+            font-size: 1rem;
+            color: $sparkred;
+            font-weight: 100;
+            margin: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    padding: 35px;
+
+    .blog {
+      .body {
+        .text {
+          label {
+            font-size: 1rem;
+          }
+
+          h1 {
+            font-size: 1.5rem;
+          }
+
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    .recent-blogs {
+      .body {
+        h1 {
+          font-size: 1.5rem;
+
+          .blogs {
+            .item {
+              h3 {
+                font-size: 1rem;
+              }
+
+              label {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
