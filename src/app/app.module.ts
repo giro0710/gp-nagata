@@ -12,19 +12,48 @@ import { HappeningsComponent } from "./happenings/happenings.component";
 import { HappeningComponent } from "./happening/happening.component";
 
 const appRoutes: Routes = [
-  { path: "home", component: HomeComponent },
+  {
+    path: "home",
+    component: HomeComponent,
+    data: {
+      title: "Home",
+    },
+  },
   {
     path: "about",
     component: AboutUsComponent,
-    data: { title: "Heroes List" },
+    data: {
+      title: "About",
+    },
   },
-  { path: "projects", component: ProductAndServicesComponent },
-  { path: "happenings", component: HappeningsComponent },
+  {
+    path: "projects",
+    component: ProductAndServicesComponent,
+    data: {
+      title: "Projects",
+    },
+  },
+  {
+    path: "happenings",
+    component: HappeningsComponent,
+    data: {
+      title: "Happenings",
+    },
+  },
   {
     path: "happenings/The Start of the GP-Nagata Collaboration",
     component: HappeningComponent,
+    data: {
+      title: "The Start of the GP-Nagata Collaboration",
+    },
   },
-  { path: "connect", component: ContactUsComponent },
+  {
+    path: "connect",
+    component: ContactUsComponent,
+    data: {
+      title: "Connect",
+    },
+  },
   { path: "", redirectTo: "/home", pathMatch: "full" },
   { path: "**", redirectTo: "/home" },
 ];
