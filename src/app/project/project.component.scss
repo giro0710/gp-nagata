@@ -1,0 +1,73 @@
+$skyblue: #00aff0;
+$sparkred: #eb2145;
+$ironblack: #323232;
+$steelgrey: #f1f1f1;
+
+.main {
+  margin-top: 75px;
+  padding: 50px;
+
+  .details {
+    margin-bottom: 5px;
+
+    .body {
+      .text {
+        h1 {
+          font-size: 2rem;
+          text-align: justify;
+          margin-bottom: 25px;
+        }
+
+        label {
+          font-size: 1.3rem;
+          margin-bottom: 0px;
+        }
+
+        p {
+          font-family: "Calibri";
+          font-size: 1.2rem;
+          text-align: justify;
+          margin-bottom: 25px;
+        }
+
+        .sparkred {
+          color: $sparkred;
+        }
+      }
+    }
+  }
+
+  .photos {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    padding: 35px;
+
+    .details {
+      padding: 0px;
+
+      .body {
+        .text {
+          label {
+            font-size: 1rem;
+          }
+
+          h1 {
+            font-size: 1.5rem;
+          }
+
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    .photos {
+      padding: 0px;
+    }
+  }
+}

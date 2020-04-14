@@ -10,6 +10,7 @@ import { ProductAndServicesComponent } from "./product-and-services/product-and-
 import { ContactUsComponent } from "./contact-us/contact-us.component";
 import { HappeningsComponent } from "./happenings/happenings.component";
 import { HappeningComponent } from "./happening/happening.component";
+import { ProjectComponent } from './project/project.component';
 
 const appRoutes: Routes = [
   {
@@ -31,6 +32,13 @@ const appRoutes: Routes = [
     component: ProductAndServicesComponent,
     data: {
       title: "Projects",
+    },
+  },
+  {
+    path: "projects/Public Market",
+    component: ProjectComponent,
+    data: {
+      title: "Public Market",
     },
   },
   {
@@ -67,6 +75,7 @@ const appRoutes: Routes = [
     ContactUsComponent,
     HappeningsComponent,
     HappeningComponent,
+    ProjectComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes)],
   providers: [],
