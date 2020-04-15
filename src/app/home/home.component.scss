@@ -130,11 +130,15 @@ $skyblue: #00aff0;
 
 @media only screen and (max-width: 768px) {
   .home {
-    background-position-x: 25%;
+    background-position-x: 50%;
 
     .home-body {
       .content {
         width: 100%;
+
+        h1 {
+          font-size: 2rem;
+        }
       }
     }
   }
