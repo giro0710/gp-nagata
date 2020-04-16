@@ -65,6 +65,17 @@
         margin: 0px;
       }
     }
+
+    .message-sent {
+      padding: 0px;
+
+      p {
+        font-size: 0.8rem;
+        color: green;
+        font-weight: 300;
+        margin: 0px;
+      }
+    }
   }
 
   input[type="submit"] {

@@ -154,7 +154,11 @@
               class="btn btn-secondary"
               value="Send Message"
             />
-            <!-- <button type="submit" class="btn btn-secondary">Send Message</button> -->
+            <div *ngIf="sent" class="mt-3 message-sent">
+              <p>
+                Your message was sent successfully!
+              </p>
+            </div>
           </div>
         </form>
       </div>

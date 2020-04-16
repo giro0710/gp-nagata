@@ -22,6 +22,7 @@ export class ContactUsComponent implements OnInit {
     inputMessage: new FormControl(""),
   });
   submitted = false;
+  sent = false;
 
   emailData = {
     email: "",
@@ -66,7 +67,8 @@ export class ContactUsComponent implements OnInit {
       .toPromise()
       .then((data) => {
         this.submitted = false;
-        console.log(data);
+        this.sent = true;
+        this.emailForm.reset();
       });
   }
 
