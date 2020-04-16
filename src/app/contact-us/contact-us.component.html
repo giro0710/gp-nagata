@@ -41,15 +41,39 @@
     <div class="col-md-6">
       <div class="d-flex flex-column flex-wrap">
         <h3>Send Us Your Message</h3>
-        <form class="container d-flex flex-row flex-wrap p-0">
+        <form
+          class="container d-flex flex-row flex-wrap p-0"
+          [formGroup]="emailForm"
+          (ngSubmit)="onSubmitEmail()"
+        >
           <div class="form-group col-md-6">
             <label for="inputEmail">Email address</label>
             <input
               type="email"
               class="form-control"
               id="inputEmail"
-              aria-describedby="emailHelp"
+              formControlName="inputEmail"
+              required
+              [ngClass]="{
+                'is-invalid': submitted && emailForm.controls.inputEmail.errors
+              }"
             />
+            <div
+              *ngIf="submitted && emailForm.controls.inputEmail.errors"
+              class="invalid-feedback"
+            >
+              <p *ngIf="emailForm.controls.inputEmail.errors.required">
+                Email is required
+              </p>
+              <p
+                *ngIf="
+                  emailForm.controls.inputEmail.value &&
+                  emailForm.controls.inputEmail.invalid
+                "
+              >
+                Please input valid email
+              </p>
+            </div>
           </div>
           <div class="form-group col-md-6">
             <label for="inputName">Name</label>
@@ -57,18 +81,81 @@
               type="text"
               class="form-control"
               id="inputName"
-              aria-describedby="emailHelp"
+              formControlName="inputName"
+              required
+              [ngClass]="{
+                'is-invalid': submitted && emailForm.controls.inputName.errors
+              }"
             />
+            <div
+              *ngIf="submitted && emailForm.controls.inputName.errors"
+              class="invalid-feedback"
+            >
+              <p *ngIf="emailForm.controls.inputName.errors.required">
+                Your name is required
+              </p>
+            </div>
           </div>
           <div class="form-group col-md-12">
             <label for="inputSubject">Subject</label>
-            <input type="text" class="form-control" id="inputSubject" />
+            <input
+              type="text"
+              class="form-control"
+              id="inputSubject"
+              formControlName="inputSubject"
+              required
+              [ngClass]="{
+                'is-invalid':
+                  submitted && emailForm.controls.inputSubject.errors
+              }"
+            />
+            <div
+              *ngIf="submitted && emailForm.controls.inputSubject.errors"
+              class="invalid-feedback"
+            >
+              <p *ngIf="emailForm.controls.inputSubject.errors.required">
+                Message subject is required
+              </p>
+            </div>
           </div>
           <div class="form-group col-md-12">
-            <label for="textMessage">Message</label>
-            <textarea class="form-control" id="textMessage" rows="5"></textarea>
+            <label for="inputMessage">Message</label>
+            <textarea
+              class="form-control"
+              id="inputMessage"
+              rows="5"
+              formControlName="inputMessage"
+              required
+              [ngClass]="{
+                'is-invalid':
+                  submitted && emailForm.controls.inputMessage.errors
+              }"
+            ></textarea>
+            <div
+              *ngIf="submitted && emailForm.controls.inputMessage.errors"
+              class="invalid-feedback"
+            >
+              <p *ngIf="emailForm.controls.inputMessage.errors.required">
+                Your message is required
+              </p>
+              <p
+                *ngIf="
+                  emailForm.controls.inputMessage.value &&
+                  emailForm.controls.inputMessage.value.length < 12
+                "
+              >
+                Your message is too short
+              </p>
+            </div>
           </div>
-          <button type="submit" class="btn btn-secondary">Send Message</button>
+          <div class="form-group col-md-12">
+            <input
+              type="submit"
+              class="btn btn-secondary"
+              value="Send Message"
+            />
+            <!-- <button type="submit" class="btn btn-secondary">Send Message</button> -->
+          </div>
         </form>
       </div>
     </div>
@@ -77,6 +164,6 @@
 
 <section class="map">
   <div class="container-fluid body d-flex flex-row flex-wrap">
-    <div #mapRef style="width: 100%; height: 500px"></div>
+    <div #mapRef style="width: 100%; height: 500px;"></div>
   </div>
 </section>

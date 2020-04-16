@@ -3,6 +3,8 @@ import { NgModule } from "@angular/core";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { RouterModule, Routes } from "@angular/router";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from "./app.component";
 import { HomeComponent } from "./home/home.component";
 import { AboutUsComponent } from "./about-us/about-us.component";
@@ -10,7 +12,7 @@ import { ProductAndServicesComponent } from "./product-and-services/product-and-
 import { ContactUsComponent } from "./contact-us/contact-us.component";
 import { HappeningsComponent } from "./happenings/happenings.component";
 import { HappeningComponent } from "./happening/happening.component";
-import { ProjectComponent } from './project/project.component';
+import { ProjectComponent } from "./project/project.component";
 
 const appRoutes: Routes = [
   {
@@ -77,7 +79,14 @@ const appRoutes: Routes = [
     HappeningComponent,
     ProjectComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes)],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes),
+    FormsModule,
+    ReactiveFormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

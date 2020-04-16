@@ -54,9 +54,20 @@
     textarea {
       resize: none;
     }
+
+    .invalid-feedback {
+      padding: 0px;
+
+      p {
+        font-size: 0.8rem;
+        color: red;
+        font-weight: 300;
+        margin: 0px;
+      }
+    }
   }
 
-  button {
+  input[type="submit"] {
     background-color: #323232 !important;
     border-radius: 0px !important;
     font-family: "Calibri";
