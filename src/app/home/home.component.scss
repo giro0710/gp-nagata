@@ -3,44 +3,134 @@ $steelgrey: #f1f1f1;
 $skyblue: #00aff0;
 
 .home {
-  width: 100%;
-  height: 100vh;
-  background: url("../../assets/images/home/GPN Web Images 01.jpg") no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-position-y: 100%;
-  padding: 15px 25px 70px 25px;
+  .carousel {
+    height: 100vh;
 
-  .home-body {
-    height: 100%;
-    margin-bottom: 25px;
+    .carousel-inner {
+      .carousel-item {
+        .item-1 {
+          width: 100%;
+          height: 100vh;
+          background: url("../../assets/images/home/GPN Web Images 01.jpg")
+            no-repeat;
+          background-size: cover;
+          background-position: center;
+          background-position-y: 100%;
+          padding: 15px 25px 70px 25px;
 
-    .content {
-      width: 40%;
-      text-align: left;
+          .body {
+            height: 100%;
+            margin-bottom: 25px;
 
-      h1 {
-        color: black;
-        font-size: 3rem;
-      }
+            .content {
+              width: 40%;
+              text-align: left;
 
-      h3 {
-        color: white;
-        margin-bottom: 50px;
-      }
+              h1 {
+                color: black;
+                font-size: 3rem;
+              }
 
-      button {
-        width: 50%;
-        padding: 10px;
-        background-color: $sparkred;
-        border: 1px solid $sparkred;
-        border-radius: 0;
-        color: white;
-        position: relative;
+              h3 {
+                color: white;
+                margin-bottom: 50px;
+              }
+
+              button {
+                width: 50%;
+                padding: 10px;
+                background-color: $sparkred;
+                border: 1px solid $sparkred;
+                border-radius: 0;
+                color: white;
+                position: relative;
+              }
+            }
+          }
+        }
+
+        .item-2 {
+          width: 100%;
+          height: 100vh;
+          background: url("../../assets/images/home/GP Nagata Web Covid.jpg")
+            no-repeat;
+          background-size: cover;
+          background-position: center;
+          background-position-y: 100%;
+          padding: 15px 25px 70px 25px;
+
+          .body {
+            height: 100%;
+            margin-bottom: 25px;
+
+            .content {
+              width: 100%;
+              text-align: left;
+
+              img {
+                width: 7.5%;
+                margin-bottom: 15px;
+              }
+
+              h1 {
+                color: white;
+                font-size: 4.5rem;
+                margin-bottom: 0px;
+              }
+
+              h3 {
+                margin-top: 25px;
+                color: $skyblue;
+                margin-bottom: 50px;
+                font-size: 3rem;
+              }
+            }
+          }
+        }
       }
     }
   }
 }
+
+// .home {
+//   width: 100%;
+//   height: 100vh;
+//   background: url("../../assets/images/home/GPN Web Images 01.jpg") no-repeat;
+//   background-size: cover;
+//   background-position: center;
+//   background-position-y: 100%;
+//   padding: 15px 25px 70px 25px;
+
+//   .home-body {
+//     height: 100%;
+//     margin-bottom: 25px;
+
+//     .content {
+//       width: 40%;
+//       text-align: left;
+
+//       h1 {
+//         color: black;
+//         font-size: 3rem;
+//       }
+
+//       h3 {
+//         color: white;
+//         margin-bottom: 50px;
+//       }
+
+//       button {
+//         width: 50%;
+//         padding: 10px;
+//         background-color: $sparkred;
+//         border: 1px solid $sparkred;
+//         border-radius: 0;
+//         color: white;
+//         position: relative;
+//       }
+//     }
+//   }
+// }
 
 .about {
   background-color: $steelgrey;
@@ -131,14 +221,47 @@ $skyblue: #00aff0;
 
 @media only screen and (max-width: 768px) {
   .home {
-    background-position-x: 40%;
+    .carousel {
+      .carousel-inner {
+        .carousel-item {
+          .item-1 {
+            background-position-x: 40%;
+            .body {
+              .content {
+                width: 100%;
 
-    .home-body {
-      .content {
-        width: 100%;
+                h1 {
+                  font-size: 2.5rem;
+                }
 
-        h1 {
-          font-size: 2.5rem;
+                h3 {
+                  margin-bottom: 50px;
+                }
+              }
+            }
+          }
+
+          .item-2 {
+            .body {
+              align-items: center !important;
+
+              .content {
+                width: 100%;
+
+                img {
+                  width: 15%;
+                }
+
+                h1 {
+                  font-size: 2rem;
+                }
+
+                h3 {
+                  font-size: 1.5rem;
+                }
+              }
+            }
+          }
         }
       }
     }
