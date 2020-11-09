@@ -81,7 +81,7 @@ export class ContactUsComponent implements OnInit {
     var marker = new window["google"].maps.Marker({
       position: { lat: 14.629918, lng: 121.02769 },
       map: map,
-      title: "GP-Nagata Inc.",
+      title: "GP-NEXT",
       draggable: true,
       animation: window["google"].maps.Animation.DROP,
     });
@@ -90,7 +90,7 @@ export class ContactUsComponent implements OnInit {
       '<div id="content">' +
       '<div id="siteNotice">' +
       "</div>" +
-      '<h3 id="thirdHeading" class="thirdHeading">GP-Nagata Inc.</h3>' +
+      '<h3 id="thirdHeading" class="thirdHeading">GP-NEXT</h3>' +
       '<div id="bodyContent">' +
       "<p>74 Don A Roces Ave. Cor. Sct. Santiago St. Brgy. Obrero Diliman Quezon City</p>" +
       "</div>" +

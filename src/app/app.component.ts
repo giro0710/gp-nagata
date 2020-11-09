@@ -33,7 +33,7 @@ export class AppComponent {
       )
       .subscribe((data: any) => {
         if (data) {
-          this.titleService.setTitle(data + " - GP-Nagata Inc.");
+          this.titleService.setTitle(data + " | GP-NEXT");
         }
       });
   }
